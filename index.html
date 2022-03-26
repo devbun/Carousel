@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cat Carousel</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <b>Paintings from the Art Institute of Chicago</b>
+    </header>
+
+    <div class="search"><label for='term'>Term:</label>
+      <input id='term' name='term' type='text' value="gogh"/>
+      <button onclick="getPaintings(this.value)">Search</button>
+    </div>
+
+    <div class="carousel-container" id="carousel-container">
+
+      <div class="carousel-panel" id="panel-left"></div>
+
+      <div class="carousel-window" id="window">
+        <div class="image-container" id="image-container"><img id='main-img' src="#"></div>
+        <div class="nav-dots" id="nav-dots"></div>
+      </div>
+
+      <div class="carousel-panel" id="panel-right"></div>
+
+    </div>
+
+    <div class="nav-bar" id="nav-bar">
+      <span class="btn nav-left" onclick="displayMove(currentPainting - 1)">Previous</span>
+      <span class="btn nav-play">Play</span>
+      <span class="btn nav-right" onclick="displayMove(currentPainting + 1)">Next</span>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.carousel-container {
+    /* height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.slide {
+    /* width: 500px;
+    height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black; 
+}
+
+.carousel-window {
+    /* width: 500px;
+    height: 500px; */
+}
+
+/* .carousel-panel {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.nav-bar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    width: 6rem;
+    height: 2rem;
+    padding: .25rem;
+    margin-right: .25rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px #888888;
+    transition: all .1s ease-in-out;
+    border: 1px solid;
+} 
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
