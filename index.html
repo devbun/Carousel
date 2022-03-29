@@ -13,7 +13,7 @@
 
     <div class="search"><label for='term'>Term:</label>
       <input id='term' name='term' type='text' value="gogh"/>
-      <button onclick="getPaintings(this.value)">Search</button>
+      <button onclick="getPaintings(document.getElementById('term').value)" id="search">Search</button>
     </div>
 
     <div class="carousel-container" id="carousel-container">
@@ -21,8 +21,11 @@
       <div class="carousel-panel" id="panel-left"></div>
 
       <div class="carousel-window" id="window">
-        <div class="image-container" id="image-container"><img id='main-img' src="#"></div>
-        <div class="nav-dots" id="nav-dots"></div>
+        <div class="image-container" id="image-container" onmouseover="DotsOn()" onmouseout="DotsOff()">
+          <img id='main-img' src="#"  />
+          <div class="nav-dots" id="nav-dots"></div>
+        </div>
+        <div id="info" class="info"></div>
       </div>
 
       <div class="carousel-panel" id="panel-right"></div>

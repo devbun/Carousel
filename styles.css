@@ -11,12 +11,14 @@ body {
 }
 
 .image-container {
+    position: relative;
     width: 500px;
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    
 }
 
 .carousel-container {
@@ -36,10 +38,10 @@ body {
     border: 2px solid black; 
 }
 
-.carousel-window {
+/* .carousel-window { */
     /* width: 500px;
     height: 500px; */
-}
+/* } */
 
 /* .carousel-panel {
     width: 500px;
@@ -48,6 +50,42 @@ body {
     align-items: center;
     justify-content: center;
 } */
+
+.info {
+    visibility: visible;
+    text-align: center;
+    width: 500px;
+    height: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-dots {
+    position: absolute;
+    bottom: 4rem;
+    width: 500px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.dot {
+    width: .5rem;
+    height: .5rem;
+    background-color: aliceblue;
+    border-radius: .25rem;
+    opacity: 0.33;
+    margin: 0.25rem;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+.dot:hover {
+    opacity: 1;
+}
 
 .nav-bar {
     margin-top: 1rem;
